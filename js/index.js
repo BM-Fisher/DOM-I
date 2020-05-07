@@ -58,6 +58,14 @@ const ctaImg = document.querySelector('#cta-img')
 console.log('CTA Circle Img', ctaImg);
 ctaImg.src = siteContent['cta'] ['img-src']
 
+const h1 = document.querySelector('h1')
+console.log('CTA h1', h1)
+h1.textContent = 'dom\n is\n awesome'
+h1.style.whiteSpace = 'pre';
+
+const ctaBtn = document.querySelector('.cta-text button')
+console.log('Cta Button', ctaBtn)
+ctaBtn.textContent = siteContent['cta'] ['button']
 // Main Content
 
 // Contact
