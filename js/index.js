@@ -53,6 +53,28 @@ navBar[3].textContent = siteContent['nav'] ['nav-item-4']
 navBar[4].textContent = siteContent['nav'] ['nav-item-5']
 navBar[5].textContent = siteContent['nav'] ['nav-item-6']
 
+// Turning Links Green
+navBar.forEach(link => {
+  link.style.color = '#0DD54E'
+}
+)
+
+// Parent for Append and Prepend
+const parentNav = document.querySelector('nav')
+console.log('Parent Nav', parentNav)
+// Append
+const appendLink = document.createElement('a')
+console.log('New Link for Append', appendLink)
+appendLink.textContent = 'Back'
+// console.log('Text for Append Link', appendLink)
+parentNav.appendChild(appendLink)
+// Prepend
+const prependLink = document.createElement('a')
+console.log('New Link for Prepend', prependLink)
+prependLink.textContent = 'Front'
+// console.log('Text for Prepend Link', prependLink)
+parentNav.prepend(prependLink)
+
 // CTA
 const ctaImg = document.querySelector('#cta-img')
 console.log('CTA Circle Img', ctaImg);
