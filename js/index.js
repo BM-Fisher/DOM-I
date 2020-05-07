@@ -66,8 +66,18 @@ h1.style.whiteSpace = 'pre';
 const ctaBtn = document.querySelector('.cta-text button')
 console.log('Cta Button', ctaBtn)
 ctaBtn.textContent = siteContent['cta'] ['button']
+
 // Main Content
+const h4Titles = document.querySelectorAll('.main-content h4')
+console.log('Main Content Titles', h4Titles)
+h4Titles[0].textContent = siteContent['main-content'] ['features-h4']
+h4Titles[1].textContent = siteContent['main-content'] ['about-h4']
+h4Titles[2].textContent = siteContent['main-content'] ['services-h4']
+h4Titles[3].textContent = siteContent['main-content'] ['product-h4']
+h4Titles[4].textContent = siteContent['main-content'] ['vision-h4']
+
 
 // Contact
+
 
 // Footer
