@@ -101,3 +101,6 @@ contactContent[1].textContent = siteContent['contact'] ['phone']
 contactContent[2].textContent = siteContent['contact'] ['email']
 
 // Footer
+const footer = document.querySelector('footer p')
+console.log('Footer', footer)
+footer.textContent = siteContent['footer'] ['copyright']
