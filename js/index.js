@@ -85,9 +85,19 @@ mainContent[3].textContent = siteContent['main-content'] ['product-content']
 mainContent[4].textContent = siteContent['main-content'] ['vision-content']
 
 const midImg = document.querySelector('.middle-img')
-console.log('Middle Img', midImg)
+console.log('Middle Img', midImg);
 midImg.src = siteContent['main-content'] ['middle-img-src']
-// Contact
 
+// Contact
+const contactTitle = document.querySelector('.contact h4')
+console.log('contact title', contactTitle); 
+contactTitle.textContent = siteContent['contact'] ['contact-h4']
+
+const contactContent = document.querySelectorAll('.contact p')
+console.log('contact section content', contactContent);
+contactContent[0].textContent = '123 Way 456 Street\n Somewhere, USA' 
+contactContent[0].style.whiteSpace = 'pre'
+contactContent[1].textContent = siteContent['contact'] ['phone']
+contactContent[2].textContent = siteContent['contact'] ['email']
 
 // Footer
