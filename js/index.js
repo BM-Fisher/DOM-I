@@ -126,3 +126,39 @@ contactContent[2].textContent = siteContent['contact'] ['email']
 const footer = document.querySelector('footer p')
 console.log('Footer', footer)
 footer.textContent = siteContent['footer'] ['copyright']
+
+// Stretch
+const two4One = function() {
+  appendLink.style.color = '#7ECDE1';
+  appendLink.style.textTransform = 'upperCase';
+  prependLink.style.color = '#7ECDE1';
+  prependLink.style.textTransform = 'upperCase';
+}
+two4One();
+
+navBar.forEach(element => {
+  element.style.textTransform = 'upperCase';
+})
+
+mainContent.forEach(text => {
+  text.style.color= '#2F3656';
+})
+
+h4Titles.forEach(title => {
+  title.style.color = '#fdce41';
+})
+
+ctaBtn.addEventListener('mouseenter', (event) => {
+  event.target.style.textTransform = 'upperCase';
+  event.target.style.backgroundColor = '#77BDD1';
+})
+
+ctaBtn.addEventListener('mouseleave', (event) => {
+  event.target.style.textTransform = 'capitalize';
+  event.target.style.backgroundColor = 'white';
+})
+
+ctaBtn.addEventListener('click', (event) => {
+  event.target.style.backgroundColor = '#16DB4E';
+  console.log('Button Clicked');
+})
