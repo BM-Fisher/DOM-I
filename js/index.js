@@ -59,24 +59,34 @@ console.log('CTA Circle Img', ctaImg);
 ctaImg.src = siteContent['cta'] ['img-src']
 
 const h1 = document.querySelector('h1')
-console.log('CTA h1', h1)
+console.log('CTA h1', h1);
 h1.textContent = 'dom\n is\n awesome'
-h1.style.whiteSpace = 'pre';
+h1.style.whiteSpace = 'pre'
 
 const ctaBtn = document.querySelector('.cta-text button')
-console.log('Cta Button', ctaBtn)
+console.log('Cta Button', ctaBtn);
 ctaBtn.textContent = siteContent['cta'] ['button']
 
 // Main Content
 const h4Titles = document.querySelectorAll('.main-content h4')
-console.log('Main Content Titles', h4Titles)
+console.log('Main Content Titles', h4Titles);
 h4Titles[0].textContent = siteContent['main-content'] ['features-h4']
 h4Titles[1].textContent = siteContent['main-content'] ['about-h4']
 h4Titles[2].textContent = siteContent['main-content'] ['services-h4']
 h4Titles[3].textContent = siteContent['main-content'] ['product-h4']
 h4Titles[4].textContent = siteContent['main-content'] ['vision-h4']
 
+const mainContent = document.querySelectorAll('.main-content p')
+console.log('Main Content Text', mainContent)
+mainContent[0].textContent = siteContent['main-content'] ['features-content']
+mainContent[1].textContent = siteContent['main-content'] ['about-content']
+mainContent[2].textContent = siteContent['main-content'] ['services-content']
+mainContent[3].textContent = siteContent['main-content'] ['product-content']
+mainContent[4].textContent = siteContent['main-content'] ['vision-content']
 
+const midImg = document.querySelector('.middle-img')
+console.log('Middle Img', midImg)
+midImg.src = siteContent['main-content'] ['middle-img-src']
 // Contact
 
 
